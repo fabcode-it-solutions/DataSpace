@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin · Acme Corporation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./protect.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <a class="brand" href="./admin.html">Admin</a>
+        <a href="./index.html" class="muted">Back to site</a>
+      </div>
+    </header>
+    <nav class="admin-nav">
+      <a href="./admin.html" style="color: var(--foreground); font-weight: 600">Overview</a>
+      <span>Access</span>
+      <span>Viewers</span>
+      <span>Documents</span>
+      <span>Rooms</span>
+      <span>Sessions</span>
+      <span>Pages</span>
+      <span>Events</span>
+    </nav>
+    <div class="wrap" style="padding-top: 2.5rem; padding-bottom: 4rem">
+      <p class="eyebrow">Admin</p>
+      <h1 style="font-size: 1.75rem; font-weight: 600">Overview</h1>
+      <p class="muted" style="max-width: 36rem; margin-top: 0.5rem">
+        Who is in the room, which documents they open, and how the fund pipeline is moving.
+      </p>
+      <div class="grid grid-4" style="margin-top: 1.5rem">
+        <div class="card"><div class="muted">Document views</div><div class="stat">688</div></div>
+        <div class="card"><div class="muted">Viewers</div><div class="stat">14</div></div>
+        <div class="card"><div class="muted">Active sessions</div><div class="stat">4</div></div>
+        <div class="card"><div class="muted">Documents viewed</div><div class="stat">9</div></div>
+      </div>
+
+      <div class="card" style="margin-top: 1.5rem">
+        <h2>Views (30 days)</h2>
+        <div class="bars" style="gap: 2px; height: 9rem">
+          <span style="height: 42%"></span><span style="height: 55%"></span>
+          <span style="height: 38%"></span><span style="height: 61%"></span>
+          <span style="height: 70%"></span><span style="height: 48%"></span>
+          <span style="height: 33%"></span><span style="height: 58%"></span>
+          <span style="height: 64%"></span><span style="height: 51%"></span>
+          <span style="height: 29%"></span><span style="height: 72%"></span>
+          <span style="height: 81%"></span><span style="height: 66%"></span>
+          <span style="height: 44%"></span><span style="height: 59%"></span>
+          <span style="height: 90%"></span><span style="height: 74%"></span>
+          <span style="height: 52%"></span><span style="height: 47%"></span>
+          <span style="height: 63%"></span><span style="height: 71%"></span>
+          <span style="height: 40%"></span><span style="height: 56%"></span>
+          <span style="height: 68%"></span><span style="height: 77%"></span>
+          <span style="height: 49%"></span><span style="height: 60%"></span>
+        </div>
+        <p class="muted" style="margin-top: 0.75rem">Document views (dark) over site traffic. Weekends dip; a diligence spike around the term-sheet week.</p>
+      </div>
+
+      <div class="card" style="margin-top: 1.5rem">
+        <h2>Pipeline</h2>
+        <div class="grid grid-4" style="margin-top: 1rem">
+          <div><div class="muted">Lead</div><div class="stat">3</div></div>
+          <div><div class="muted">Intro</div><div class="stat">4</div></div>
+          <div><div class="muted">Diligence</div><div class="stat">3</div></div>
+          <div><div class="muted">Term sheet</div><div class="stat">1</div></div>
+          <div><div class="muted">Closed</div><div class="stat">0</div></div>
+          <div><div class="muted">Passed</div><div class="stat">1</div></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top: 1.5rem">
+        <h2>Funds</h2>
+        <table>
+          <thead>
+            <tr><th>Firm</th><th>Stage</th><th>Viewers</th><th>Score</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Northridge Venture Partners</td><td>Term sheet</td><td>2</td><td>97</td></tr>
+            <tr><td>Redwood Harbor Capital</td><td>Diligence</td><td>2</td><td>92</td></tr>
+            <tr><td>Meridian Field</td><td>Diligence</td><td>1</td><td>81</td></tr>
+            <tr><td>Brightwater Ventures</td><td>Diligence</td><td>1</td><td>74</td></tr>
+            <tr><td>Foundry North</td><td>Intro</td><td>1</td><td>61</td></tr>
+            <tr><td>Lantern Peak Partners</td><td>Intro</td><td>1</td><td>58</td></tr>
+            <tr><td>Oakmere Capital</td><td>Intro</td><td>1</td><td>54</td></tr>
+            <tr><td>Folio West</td><td>Intro</td><td>1</td><td>47</td></tr>
+            <tr><td>Copperline Ventures</td><td>Passed</td><td>1</td><td>33</td></tr>
+            <tr><td>Stonebrook Partners</td><td>Lead</td><td>1</td><td>28</td></tr>
+            <tr><td>Prairie Bridge Capital</td><td>Lead</td><td>1</td><td>22</td></tr>
+            <tr><td>Elm &amp; Mercer</td><td>Lead</td><td>1</td><td>19</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card" style="margin-top: 1.5rem">
+        <h2>Live now</h2>
+        <table>
+          <thead>
+            <tr><th>Viewer</th><th>Firm</th><th>Path</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>alex@northridge.example</td><td>Northridge Venture Partners</td><td>/docs/cap-table</td></tr>
+            <tr><td>maya@redwoodharbor.example</td><td>Redwood Harbor Capital</td><td>/docs/financial-overview</td></tr>
+            <tr><td>elena@meridianfield.example</td><td>Meridian Field</td><td>/docs/pitch-deck</td></tr>
+            <tr><td>jordan@northridge.example</td><td>Northridge Venture Partners</td><td>/docs/use-of-funds</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
